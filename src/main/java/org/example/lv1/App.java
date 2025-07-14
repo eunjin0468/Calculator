@@ -15,13 +15,13 @@ public class App {
 
         while (!exit) {
             try {
-                //양의 정수(0 포함) 입력받기
+                //양의 정수(0 포함) 입력
                 System.out.print("첫 번째 숫자를 입력하세요: ");
                 double a = sc.nextDouble();
                 System.out.print("두 번째 숫자를 입력하세요: ");
                 double b = sc.nextDouble();
 
-                //사칙연산 기호 입력받기
+                //사칙연산 기호 입력
                 System.out.print("사칙연산 기호를 입력하세요 (+,-,*,/): ");
                 char operator = sc.next().charAt(0);
 
@@ -31,7 +31,7 @@ public class App {
                     cal.removeFirstResult();
                 }catch (ArithmeticException e){ //나눗셈 예외 처리
                     System.out.println(e.getMessage());
-                }catch (IllegalArgumentException e) { // 지원하지 않는 연산자 예외 처리
+                }catch (IllegalArgumentException e) { //연산자 예외 처리
                     System.out.println(e.getMessage());
                 }
             } catch (InputMismatchException e) {
