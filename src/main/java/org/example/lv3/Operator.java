@@ -45,7 +45,7 @@ public enum Operator {
     //추상 메서드 (각 연산자가 구현함), 모든 연산자들이 공통 메서드를 갖게 하기 위함
     public abstract double apply(double a, double b);
 
-    //기호로 enum찾기
+    //연산자 기호로 enum찾기
     public static Operator fromSymbol(String symbol){
         for (Operator op:values()){
             if(op.getSymbol().equals(symbol)){
