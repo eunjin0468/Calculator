@@ -31,7 +31,7 @@ public class App {
                     cal.removeFirstResult();
                 }catch (ArithmeticException e){ //나눗셈 예외 처리
                     System.out.println(e.getMessage());
-                }catch (IllegalArgumentException e) { //지원하지 않는 연산자 예외 처리
+                }catch (IllegalArgumentException e) { //연산자 예외 처리
                     System.out.println(e.getMessage());
                 }
             } catch (InputMismatchException e) {

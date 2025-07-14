@@ -41,10 +41,7 @@ public class Calculator {
         //결과 저장
         resultHistory.add(result);
         return result;
-
-
     }
-
     public List<Double> searchBiggerThan(double value){
         return resultHistory.stream()
                 .filter(r->r>value)
